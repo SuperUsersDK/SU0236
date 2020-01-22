@@ -2,7 +2,7 @@ library(reshape2)
 library(plyr)
 library(stringr)
 
-tb_raw <- read.csv("SU0236/tb.csv", na.string = "")
+tb_raw <- read.csv("SU0236/datasets/tb.csv", na.string = "")
 names(tb_raw)[1] <- "country"
 names(tb_raw) <- str_replace(names(tb_raw), "new_sp_", "")
 
